@@ -1,11 +1,8 @@
 export interface User {
-
-    firstName : string,
-    lastName : string,
-    age? : number,
-    email:string,
-    image?: string,
+    firstName: string,
+    lastName: string,
+    email: string,
     isActive?: boolean,
     registered?: any,
-    hide?: boolean
-}
+    hide?: boolean 
+  }
