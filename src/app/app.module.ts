@@ -11,7 +11,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 import { UserService } from './services/user.service';
 import { PostService } from './services/post.service';
-import { PostsComponent } from './components/posts/posts.component';// service drkt
+import { PostsComponent } from './components/posts/posts.component';
+import { PostFormComponent } from './components/post-form/post-form.component';// service drkt
+
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { PostsComponent } from './components/posts/posts.component';// service d
     UserComponent,
     UsersComponent,
     NavbarComponent,
-    PostsComponent
+    PostsComponent,
+    PostFormComponent
+    
   ],
   imports: [
     BrowserModule,

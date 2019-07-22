@@ -4,6 +4,10 @@ import { Observable } from 'rxjs';
 
 import { Post } from '../components/models/Post';
 
+const httpOptions = {
+  headers: new HttpHeaders({'Content-Type': 'application/json'})
+}
+
 @Injectable()
 export class PostService {
   postsUrl: string = 'https://jsonplaceholder.typicode.com/posts';
@@ -12,5 +16,9 @@ export class PostService {
 
   getPosts() : Observable<Post[]> {
     return this.http.get<Post[]>(this.postsUrl);
+  }
+
+  savePost(post: Post): Observable<Post> {
+    return this.http.post<Post>(this.postsUrl, post, httpOptions);
   }
 }
