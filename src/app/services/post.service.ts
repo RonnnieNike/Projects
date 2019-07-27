@@ -20,5 +20,5 @@ export class PostService {
 
   savePost(post: Post): Observable<Post> {
     return this.http.post<Post>(this.postsUrl, post, httpOptions);
-  }
+  }//Object { title: "dcdscdc", body: "dcsdc", id: 101 }
 }
